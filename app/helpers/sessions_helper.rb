@@ -21,7 +21,7 @@ module SessionsHelper
   	end
 
     def current_user?(user)
-      user == current_user
+     user == current_user
     end
 
     def sign_out
@@ -35,6 +35,7 @@ module SessionsHelper
     end
 
     def store_location
-      session[:return_to] = request.url
+     session[:return_to] = request.url
     end
+
 end
